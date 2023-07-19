@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner .container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(#9cdcff, #1cafff);
+}
+.banner .container .ripple-background .circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+.banner .container .ripple-background .small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+.banner .container .ripple-background .medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+.banner .container .ripple-background .large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+.banner .container .ripple-background .xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+.banner .container .ripple-background .xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+.banner .container .ripple-background .shade1 {
+  opacity: 0.2;
+}
+.banner .container .ripple-background .shade2 {
+  opacity: 0.5;
+}
+.banner .container .ripple-background .shade3 {
+  opacity: 0.7;
+}
+.banner .container .ripple-background .shade4 {
+  opacity: 0.8;
+}
+.banner .container .ripple-background .shade5 {
+  opacity: 0.9;
+}
+.banner .container .scene {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+}
+.banner .container .scene .text {
+  display: flex !important;
+  position: relative;
+  color: #fff;
+  font-size: 14vh;
+  z-index: 100;
+}
+.banner .container .scene .text span {
+  position: relative !important;
+  display: inline-block;
+  font-size: 9rem;
+  text-shadow: 1px 1px 0 #e1e1e1, 2px 2px 0 #e1e1e1, 3px 3px 0 #e1e1e1, 4px 4px 0 #e1e1e1, 5px 5px 0 #e1e1e1, 6px 6px 0 #e1e1e1, 7px 7px 0 #e1e1e1, 8px 8px 0 #e1e1e1, 25px 35px 0px rgba(0, 0, 0, 0.1);
+}
+.banner .container .scene .layer {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  animation: wave 15s infinite ease;
+}
+.banner .container .scene .layer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner .container .container-toggle {
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  background: #6EC17D;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0rem;
+  height: 0rem;
+  border-radius: 2rem;
+  transition: 0.5s;
+}
+.banner .container .container-toggle .content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.banner .container .container-toggle .content a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.banner .container .container-toggle .content p {
+  color: #fff;
+  text-align: justify;
+}
+.banner .container .container-toggle .toggle {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #80B4FB;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .container .container-toggle .toggle::before {
+  content: "+";
+  color: #fff;
+  font-size: 5rem;
+  transition: 0.5s;
+}
+.banner .container .container-toggle.active {
+  width: 50rem;
+  height: 30rem;
+  transform: translateX(-50%) translateY(-50%);
+}
+.banner .container .container-toggle.active .content {
+  transform: scale(1);
+  padding: 1rem;
+  transition-delay: 0.5s;
+}
+.banner .container .container-toggle.active .content::before {
+  content: "";
+  position: absolute;
+  bottom: -5rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  transform: rotate(45deg);
+  height: 4rem;
+  transition: 0.5s;
+  background-color: #6EC17D;
+}
+.banner .container .container-toggle.active .toggle {
+  background-color: #DA4A54;
+  bottom: -5rem;
+  transition-delay: 0.5s;
+}
+.banner .container .container-toggle.active .toggle::before {
+  transform: rotate(45deg);
+}
+.banner .container .portada {
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+  left: 2rem;
+  display: block;
+  background-color: #6EC17D;
+  border-radius: 50%;
+  animation: reverse bounce 2.5s infinite ease-in;
+  transition: 0.5s;
+  box-shadow: 0px 40px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.banner .container .portada:hover {
+  animation-play-state: paused;
+}
+.banner .container .portada a {
+  font-size: 5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.banner .container .information {
+  z-index: 1000;
+  background: rgba(110, 193, 125, 0.8);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 60rem;
+  height: 50rem;
+  margin: auto;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 2rem;
+}
+.banner .container .information h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+.banner .container .information h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.banner .container .information p {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.banner .container .information img {
+  width: 20rem;
+}
+.banner .container .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .container .header h1 {
+  transition: 0.5s;
+}
+.banner .container .header h1 a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+.banner .container .header h1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.banner .container .header h2 {
+  transition: 0.5s;
+}
+.banner .container .header h2 a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.banner .container .header h2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.banner .container .header .list-unidades {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+.banner .container .index {
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  width: 40rem;
+  height: 40rem;
+  background-image: url("../img/madera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wave 15s infinite ease;
+}
+.banner .container .index:hover {
+  animation-play-state: paused;
+}
+.banner .container .index .list-temas {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+.banner .container .index .list-temas li {
+  text-align: center;
+}
+.banner .container .index .list-temas li a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+.banner .container .pdf {
+  position: absolute;
+  top: 10rem;
+  right: 0rem;
+  width: 100%;
+  height: 800px;
+  border: none;
+}
+.banner .container .ponderacion {
+  position: absolute;
+  top: 15rem;
+  right: 0rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner .container .ponderacion h2 {
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 10rem;
+}
+.banner .container .ponderacion .criterios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.banner .container .ponderacion .criterios .criterio {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.banner .container .ponderacion .criterios .criterio.uno {
+  background-color: #1cafff;
+}
+.banner .container .ponderacion .criterios .criterio.dos {
+  background-color: #DA4A54;
+}
+.banner .container .ponderacion .criterios .criterio.tres {
+  background-color: #6EC17D;
+}
+.banner .container .ponderacion .criterios .criterio.active {
+  background-color: black;
+}
+.banner .container .ponderacion .criterios h3 {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.banner .container .ponderacion .criterios p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.banner .container .contenido {
+  position: absolute;
+  top: 10rem;
+  right: 0rem;
+  width: 80rem;
+  height: 50rem;
+  display: flex;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.1) 1%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.1) 99%);
+          mask-image: linear-gradient(rgba(0, 0, 0, 0.1) 1%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.1) 99%);
+}
+.banner .container .contenido section {
+  padding: 5rem 2rem 2rem 2rem;
+  height: 100%;
+}
+.banner .container .contenido section li {
+  list-style: disc;
+  color: #fff;
+  font-size: 2rem;
+}
+.banner .container .contenido section h2 {
+  color: #fff;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+.banner .container .contenido section h3 {
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.banner .container .contenido section h4 {
+  color: #fff;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.banner .container .contenido section p {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 0rem 2rem;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=style.css.map */
