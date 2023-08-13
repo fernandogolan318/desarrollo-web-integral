@@ -389,8 +389,7 @@
   height: 50rem;
   display: flex;
   border-radius: 1rem;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   overflow: auto;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.1) 1%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.1) 99%);
           mask-image: linear-gradient(rgba(0, 0, 0, 0.1) 1%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0.1) 99%);
@@ -398,6 +397,7 @@
 .banner .container .contenido section {
   padding: 5rem 2rem 2rem 2rem;
   height: 100%;
+  margin-bottom: 100rem;
 }
 .banner .container .contenido section li {
   list-style: disc;
@@ -425,6 +425,72 @@
   font-size: 1.5rem;
   text-align: justify;
   padding: 0rem 2rem;
+}
+.banner .container .horario {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner .container .horario h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.banner .container .horario table {
+  background-color: white;
+  width: 80%;
+  border-radius: 1rem;
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+.banner .container .horario table thead th {
+  font-size: 2rem;
+  font-weight: normal;
+  border: 2px solid #000;
+  padding: 1rem;
+}
+.banner .container .horario table tbody tr td {
+  height: 5rem;
+  min-width: 5rem;
+  font-size: 1rem;
+  text-align: left;
+  vertical-align: super;
+  padding: 1rem;
+  border: 2px solid #000;
+}
+.banner .container .horario table tbody tr td.dwi {
+  background-color: #DA4A54;
+  color: #fff;
+}
+.banner .container .recursos {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  list-style: none;
+}
+.banner .container .recursos h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+.banner .container .recursos li {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+.banner .container .recursos li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icono.png");
+  background-size: cover;
+  margin-right: 10px;
 }
 
 @keyframes wave {
