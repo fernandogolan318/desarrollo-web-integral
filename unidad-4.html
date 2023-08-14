@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/icono.png" type="image/x-png">
+  <title>Contenido Temático - Unidad 4</title>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="container">
+      <div class='ripple-background'>
+        <div class='circle xxlarge shade1'></div>
+        <div class='circle xlarge shade2'></div>
+        <div class='circle large shade3'></div>
+        <div class='circle mediun shade4'></div>
+        <div class='circle small shade5'></div>
+      </div>
+      <div class="header">
+        <h1><a href="index.html">Desarrollo Web Integral</a></h1>
+        <ul class="list-unidades">
+          <li>
+            <h2><a href="contenido-tematico.html">UNIDAD 1</a></h2>
+          </li>
+          <li>
+            <h2><a href="unidad-2.html">UNIDAD 2</a></h2>
+          </li>
+          <li>
+            <h2><a href="unidad-3.html">UNIDAD 3</a></h2>
+          </li>
+          <li>
+            <h2><a href="unidad-4.html">UNIDAD 4</a></h2>
+          </li>
+        </ul>
+      </div>
+      <div class="index">
+        <ul class="list-temas">
+          <li>
+            <h3><a href="#tema-uno">Despliegue de servicios.</a></h3>
+          </li>
+          <li>
+            <h3><a href="#tema-tres">Pruebas de software</a></h3>
+          </li>
+          <li>
+            <h3><a href="#tema-cinco">Liberación de software</a></h3>
+          </li>
+        </ul>
+      </div>
+      <h2
+        style="font-size: 2.5rem; color: #fff; position: absolute; bottom: 5%; width: 400px;background-color: #6EC17D; padding-left: 1rem; border-radius:0 1rem 1rem 0;">
+        PRUEBAS Y LIBERACIÓN DEL DESARROLLO WEB</h2>
+      <div class="contenido">
+        <section id="tema-uno">
+          <h2>Despliegue de servicios.</h2>
+          <h3>
+            Identificar el concepto de contenedores y diferenciar las herramientas para la gestión de contenedores: Docker, AWS, Azure, Google cloud.
+          </h3>
+          <article>
+            <h4>Identificar el concepto de contenedores</h4>
+            <p>Los contenedores son entornos ligeros y portátiles que permiten la ejecución de aplicaciones y servicios de forma aislada. A continuación, exploraremos el concepto de contenedores y su funcionalidad clave:</p>
+            <ul>
+              <li><p>Aislamiento: Los contenedores proporcionan un entorno aislado para la ejecución de aplicaciones, lo que significa que cada contenedor se ejecuta de forma independiente y no afecta a otros contenedores o al sistema operativo subyacente.</p></li>
+              <li><p>Portabilidad: Los contenedores son portátiles y se pueden ejecutar en diferentes entornos, ya sea en máquinas locales o en la nube, lo que facilita el despliegue de aplicaciones en diferentes plataformas.</p></li>
+              <li><p>Ligereza: Los contenedores son más ligeros en comparación con las máquinas virtuales, ya que comparten el mismo kernel del sistema operativo subyacente, lo que los hace más eficientes en términos de recursos y tiempo de inicio.</p></li>
+              <li><p>Escalabilidad: Los contenedores permiten la escalabilidad horizontal, lo que significa que se pueden crear múltiples instancias de un contenedor para manejar cargas de trabajo variables o aumentar la capacidad de una aplicación.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Docker</h4>
+            <p>Docker es una plataforma líder para la gestión de contenedores que proporciona herramientas y servicios para crear, desplegar y administrar aplicaciones en contenedores. Algunos puntos clave sobre Docker son:</p>
+            <ul>
+              <li><p>Creación de imágenes: Docker permite crear imágenes de contenedores que contienen todas las dependencias y configuraciones necesarias para ejecutar una aplicación de manera consistente en diferentes entornos.</p></li>
+              <li><p>Orquestación de contenedores: Docker ofrece herramientas como Docker Compose y Docker Swarm para orquestar y gestionar clústeres de contenedores, lo que facilita la administración y escalabilidad de las aplicaciones.</p></li>
+              <li><p>Comunidad activa: Docker cuenta con una amplia comunidad de desarrolladores y una gran cantidad de imágenes y herramientas disponibles en su Docker Hub.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>AWS (Amazon Web Services)</h4>
+            <p>AWS es un proveedor de servicios en la nube que ofrece soluciones para la gestión de contenedores a través de su servicio Amazon Elastic Container Service (ECS) y Amazon Elastic Kubernetes Service (EKS). Algunos aspectos destacados de AWS son:</p>
+            <ul>
+              <li><p>ECS: Amazon ECS es un servicio de contenedores altamente escalable que permite ejecutar y administrar contenedores de Docker en la nube de AWS.</p></li>
+              <li><p>EKS: Amazon EKS es un servicio totalmente administrado que facilita la ejecución de aplicaciones en contenedores utilizando Kubernetes, una plataforma de orquestación de contenedores de código abierto.</p></li>
+              <li><p>Integración con otros servicios de AWS: AWS ofrece una integración estrecha con otros servicios de su plataforma, como almacenamiento, redes y seguridad, lo que facilita la construcción de aplicaciones completas y escalables.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Azure</h4>
+            <p>Azure es la plataforma en la nube de Microsoft que proporciona servicios y herramientas para la gestión de contenedores. Algunos puntos clave de Azure son:</p>
+            <ul>
+              <li><p>Azure Container Instances (ACI): ACI permite ejecutar contenedores de Docker sin necesidad de configurar y administrar infraestructura de clústeres, lo que facilita la implementación rápida de aplicaciones en contenedores.</p></li>
+              <li><p>Azure Kubernetes Service (AKS): AKS es un servicio de orquestación de contenedores basado en Kubernetes que simplifica la implementación, administración y escala de aplicaciones en contenedores en la nube de Azure.</p></li>
+              <li><p>Integración con herramientas de desarrollo: Azure proporciona una integración estrecha con herramientas de desarrollo populares, como Visual Studio y Azure DevOps, lo que facilita el ciclo de vida completo de desarrollo, implementación y administración de aplicaciones en contenedores.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Google Cloud</h4>
+            <p>Google Cloud es la plataforma en la nube de Google que ofrece servicios y herramientas para la gestión de contenedores. Algunos aspectos destacados de Google Cloud son:</p>
+            <ul>
+              <li><p>Google Kubernetes Engine (GKE): GKE es un servicio de orquestación de contenedores basado en Kubernetes que permite el despliegue y la administración de aplicaciones en contenedores en la nube de Google.</p></li>
+              <li><p>Google Cloud Run: Cloud Run permite ejecutar aplicaciones en contenedores sin necesidad de administrar la infraestructura subyacente, lo que facilita la implementación rápida y la escalabilidad automática de las aplicaciones.</p></li>
+              <li><p>Amplia gama de servicios: Google Cloud ofrece una amplia gama de servicios complementarios para contenedores, como almacenamiento, bases de datos y herramientas de monitorización, que facilitan la construcción de aplicaciones completas en la nube.</p></li>
+            </ul>
+          </article>
+        </section>
+        <section id="tema-dos">
+          <h2>Despliegue de servicios.</h2>
+          <h3>
+            Identificar los servicios de infraestructura para cómputo en la nube
+          </h3>
+          <article>
+            <h4>Identificar los servicios de infraestructura para cómputo en la nube</h4>
+            <p>Los servicios de infraestructura para cómputo en la nube proporcionan recursos virtuales escalables que permiten a las empresas ejecutar aplicaciones y cargas de trabajo sin tener que invertir en infraestructura física. A continuación, exploraremos algunos de los servicios comunes utilizados en la computación en la nube:</p>
+          </article>
+        
+          <article>
+            <h4>Amazon Web Services (AWS)</h4>
+            <p>Amazon Web Services (AWS) es uno de los principales proveedores de servicios en la nube y ofrece una amplia gama de servicios de infraestructura. Algunos servicios clave de cómputo en la nube de AWS son:</p>
+            <ul>
+              <li><p>Elastic Compute Cloud (EC2): EC2 proporciona instancias de servidores virtuales escalables en la nube, lo que permite a los usuarios ejecutar aplicaciones y cargas de trabajo.</p></li>
+              <li><p>Elastic Kubernetes Service (EKS): EKS es un servicio administrado que facilita la ejecución de aplicaciones en contenedores utilizando Kubernetes.</p></li>
+              <li><p>Lambda: Lambda es un servicio de computación sin servidor que permite ejecutar código en respuesta a eventos, sin preocuparse por la infraestructura subyacente.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Microsoft Azure</h4>
+            <p>Microsoft Azure es otra plataforma líder en la nube que ofrece servicios de infraestructura para cómputo en la nube. Algunos servicios clave de cómputo en la nube de Azure son:</p>
+            <ul>
+              <li><p>Virtual Machines (VM): Azure VM proporciona instancias de servidores virtuales escalables y flexibles, que permiten ejecutar aplicaciones y cargas de trabajo.</p></li>
+              <li><p>App Service: App Service es un servicio administrado que permite implementar y escalar aplicaciones web y móviles sin preocuparse por la infraestructura subyacente.</p></li>
+              <li><p>Functions: Functions es un servicio de computación sin servidor similar a AWS Lambda, que permite ejecutar código en respuesta a eventos.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Google Cloud Platform (GCP)</h4>
+            <p>Google Cloud Platform (GCP) es la plataforma en la nube de Google y ofrece una variedad de servicios de infraestructura para cómputo en la nube. Algunos servicios clave de cómputo en la nube de GCP son:</p>
+            <ul>
+              <li><p>Compute Engine: Compute Engine proporciona instancias de máquinas virtuales escalables y personalizables, que permiten ejecutar aplicaciones y cargas de trabajo en la nube.</p></li>
+              <li><p>Kubernetes Engine (GKE): GKE es un servicio administrado que facilita la ejecución de aplicaciones en contenedores utilizando Kubernetes.</p></li>
+              <li><p>Cloud Functions: Cloud Functions es un servicio sin servidor que permite ejecutar código en respuesta a eventos, similar a AWS Lambda y Azure Functions.</p></li>
+            </ul>
+          </article>
+        </section>
+        <section id="tema-tres">
+          <h2>Pruebas de software.</h2>
+          <h3>
+            Reconocer los tipos de puebas de software: Caja blanca, Caja negra, Unitarias, Integración, Regresión, Rendimiento, Esfuerzo, Usabilidad.
+          </h3>
+          <article>
+            <h4>Reconocer los tipos de pruebas de software</h4>
+            <p>Las pruebas de software son una parte fundamental del proceso de desarrollo para asegurar la calidad y el correcto funcionamiento de una aplicación. A continuación, exploraremos algunos de los tipos más comunes de pruebas de software:</p>
+          </article>
+        
+          <article>
+            <h4>Caja blanca</h4>
+            <p>Las pruebas de caja blanca, también conocidas como pruebas de caja clara o pruebas estructurales, se centran en examinar la estructura interna del software y validar su lógica interna, flujo de control y condiciones de ejecución. Algunas técnicas utilizadas en las pruebas de caja blanca incluyen:</p>
+            <ul>
+              <li><p>Pruebas de cobertura de código.</p></li>
+              <li><p>Pruebas de flujo de control.</p></li>
+              <li><p>Pruebas de condiciones y decisiones.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Caja negra</h4>
+            <p>Las pruebas de caja negra, también conocidas como pruebas funcionales, se centran en evaluar el comportamiento externo de una aplicación sin conocer su estructura interna. Estas pruebas se basan en los requisitos y especificaciones del software y se centran en verificar que la aplicación funcione correctamente. Algunas técnicas utilizadas en las pruebas de caja negra incluyen:</p>
+            <ul>
+              <li><p>Pruebas de casos de prueba.</p></li>
+              <li><p>Pruebas de equivalencia.</p></li>
+              <li><p>Pruebas de límites.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Unitarias</h4>
+            <p>Las pruebas unitarias se enfocan en verificar el funcionamiento correcto de unidades individuales de código, como funciones, métodos o clases. Estas pruebas se realizan a nivel de componente y se centran en validar el comportamiento esperado de cada unidad de forma aislada. Las pruebas unitarias se suelen realizar utilizando frameworks y herramientas específicas para facilitar su ejecución y automatización.</p>
+          </article>
+        
+          <article>
+            <h4>Integración</h4>
+            <p>Las pruebas de integración se llevan a cabo para verificar el correcto funcionamiento de múltiples componentes o módulos de software trabajando juntos. Estas pruebas se centran en verificar la interoperabilidad y la comunicación adecuada entre los distintos componentes y en detectar posibles problemas de integración.</p>
+          </article>
+        
+          <article>
+            <h4>Regresión</h4>
+            <p>Las pruebas de regresión se realizan para asegurar que los cambios o actualizaciones realizadas en una aplicación no hayan introducido nuevos errores o hayan afectado negativamente el funcionamiento existente. Estas pruebas se centran en volver a probar las funcionalidades previamente probadas para garantizar que sigan funcionando correctamente después de los cambios realizados.</p>
+          </article>
+        
+          <article>
+            <h4>Rendimiento</h4>
+            <p>Las pruebas de rendimiento se llevan a cabo para evaluar el rendimiento y la capacidad de respuesta de una aplicación bajo diferentes cargas y condiciones. Estas pruebas se centran en medir y analizar métricas como el tiempo de respuesta, la utilización de recursos y la capacidad de escalabilidad de la aplicación.</p>
+          </article>
+        
+          <article>
+            <h4>Esfuerzo</h4>
+            <p>Las pruebas de esfuerzo, también conocidas como pruebas de carga, se realizan para evaluar el comportamiento de una aplicación bajo cargas de trabajo intensas y condiciones extremas. Estas pruebas se centran en verificar la estabilidad, la tolerancia a fallos y la resistencia de la aplicación.</p>
+          </article>
+        
+          <article>
+            <h4>Usabilidad</h4>
+            <p>Las pruebas de usabilidad se enfocan en evaluar la facilidad de uso y la experiencia del usuario de una aplicación. Estaspruebas se centran en aspectos como la navegación, la claridad de las instrucciones, la accesibilidad y la satisfacción general del usuario al interactuar con la aplicación.</p>
+          </article>
+        </section>
+        <section id="tema-cuatro">
+          <h2>Pruebas de software</h2>
+          <h3>
+            Diferenciar las herramientas de pruebas de software: Realizar la pruebas software con las herramientas seleccionadas, Realizar la automatización de pruebas de software.
+          </h3>
+          <article>
+            <h4>Diferenciar las herramientas de pruebas de software</h4>
+            <p>Las herramientas de pruebas de software son programas o aplicaciones que ayudan a los equipos de desarrollo a realizar pruebas y evaluar la calidad de sus aplicaciones. A continuación, exploraremos dos categorías principales de herramientas de pruebas de software:</p>
+          </article>
+        
+          <article>
+            <h4>Pruebas de software seleccionadas</h4>
+            <p>Las herramientas de pruebas de software seleccionadas son aquellas que se utilizan específicamente para ejecutar pruebas en una aplicación. Estas herramientas pueden incluir:</p>
+            <ul>
+              <li><p>Frameworks de pruebas: como JUnit para pruebas unitarias en Java o NUnit para pruebas unitarias en .NET.</p></li>
+              <li><p>Herramientas de pruebas de carga: como Apache JMeter o LoadRunner, que permiten simular cargas de usuarios y evaluar el rendimiento de una aplicación bajo diferentes condiciones.</p></li>
+              <li><p>Herramientas de pruebas funcionales: como Selenium o Cypress, que permiten automatizar y ejecutar pruebas funcionales en aplicaciones web.</p></li>
+              <li><p>Herramientas de pruebas de API: como Postman o SoapUI, que facilitan la creación y ejecución de pruebas de integración y validación de API.</p></li>
+            </ul>
+          </article>
+        
+          <article>
+            <h4>Automatización de pruebas de software</h4>
+            <p>La automatización de pruebas de software implica el uso de herramientas y técnicas para automatizar la ejecución de pruebas y reducir la intervención manual. Algunas de las herramientas de automatización de pruebas de software más comunes son:</p>
+            <ul>
+              <li><p>Frameworks de pruebas: como Selenium WebDriver, Appium o TestCafe, que permiten automatizar pruebas funcionales en aplicaciones web y móviles.</p></li>
+              <li><p>Herramientas de pruebas de API: como Postman, SoapUI o RestAssured, que facilitan la creación y ejecución de pruebas automatizadas para APIs.</p></li>
+              <li><p>Herramientas de pruebas de carga: como Apache JMeter, Gatling o Locust, que permiten automatizar pruebas de carga y estrés en aplicaciones.</p></li>
+              <li><p>Frameworks de pruebas de unidad: como JUnit, NUnit o pytest, que permiten escribir y ejecutar pruebas unitarias automatizadas.</p></li>
+            </ul>
+          </article>
+        </section>
+        <section id="tema-cinco">
+          <h2>Liberación del software</h2>
+          <h3>
+            Identificar las políticas y normativa aplicable para la liberación del software.
+          </h3>
+          <article>
+            <h4>Identificar las políticas y normativa aplicable para la liberación del software</h4>
+            <p>La liberación del software es un proceso crítico en el ciclo de desarrollo de software, y existen diversas políticas y normativas que se aplican para garantizar la calidad y la seguridad del software antes de su lanzamiento. A continuación, se mencionan algunas de las políticas y normativas comunes:</p>
+          </article>
+        
+          <article>
+            <h4>Políticas de control de versiones</h4>
+            <p>Las políticas de control de versiones establecen los procedimientos y reglas para gestionar y controlar las diferentes versiones del software. Estas políticas definen cómo se deben etiquetar, rastrear y administrar los cambios realizados en el código fuente y otros componentes del software. Algunas de las herramientas comunes utilizadas para el control de versiones incluyen Git, Subversion y Mercurial.</p>
+          </article>
+        
+          <article>
+            <h4>Políticas de gestión de configuración</h4>
+            <p>Las políticas de gestión de configuración se refieren a las directrices y procedimientos para gestionar y controlar la configuración del software. Esto incluye la gestión de la configuración de los componentes del software, la gestión de las dependencias y la gestión de la configuración de los entornos de desarrollo, pruebas y producción. Estas políticas aseguran que todas las configuraciones estén correctamente documentadas y controladas durante el ciclo de vida del software.</p>
+          </article>
+        
+          <article>
+            <h4>Normativas de seguridad y privacidad</h4>
+            <p>Las normativas de seguridad y privacidad son reglas y regulaciones que protegen la seguridad y la privacidad de los datos y la información del software. Estas normativas pueden variar según la industria y la ubicación geográfica, pero generalmente incluyen requisitos de protección de datos personales, cifrado de datos, gestión de accesos y autenticación, y protección contra vulnerabilidades y ataques informáticos.</p>
+          </article>
+        
+          <article>
+            <h4>Políticas de pruebas y calidad</h4>
+            <p>Las políticas de pruebas y calidad establecen los estándares y las prácticas para realizar pruebas exhaustivas del software antes de su liberación. Estas políticas definen los tipos de pruebas que se deben realizar, como pruebas funcionales, pruebas de rendimiento, pruebas de seguridad, etc. Además, establecen los criterios de calidad y los umbrales aceptables para la liberación del software.</p>
+          </article>
+        
+          <article>
+            <h4>Políticas de cumplimiento normativo</h4>
+            <p>Las políticas de cumplimiento normativo se refieren al cumplimiento de las regulaciones y estándares de la industria aplicables al software. Esto puede incluir normativas específicas relacionadas con la seguridad de la información, la protección de datos, la accesibilidad, la interoperabilidad, entre otros. Estas políticas aseguran que el software cumpla con los requisitos legales y normativos antes de su liberación.</p>
+          </article>
+        </section>
+        <section id="tema-seis">
+          <h2>Liberación del software</h2>
+          <h3>
+            Diferenciar las herramientas de liberación de software
+          </h3>
+          <article>
+            <h4>Diferenciar las herramientas de liberación de software</h4>
+            <p>Las herramientas de liberación de software son programas o soluciones que ayudan a los equipos de desarrollo a gestionar y automatizar el proceso de liberación de software. Estas herramientas ofrecen una serie de funcionalidades que facilitan la entrega del software de manera eficiente y confiable. A continuación, se mencionan algunas de las diferencias entre las herramientas de liberación de software más comunes:</p>
+          </article>
+        
+          <article>
+            <h4>Sistemas de control de versiones</h4>
+            <p>Los sistemas de control de versiones, como Git, SVN (Subversion) o Mercurial, no son herramientas de liberación de software en sí mismos, pero desempeñan un papel fundamental en el proceso de liberación. Estas herramientas permiten gestionar y controlar las diferentes versiones del software, rastreando los cambios realizados en el código fuente y otros componentes. Los sistemas de control de versiones son esenciales para mantener un historial de versiones y controlar los cambios que se incluirán en la próxima versión del software.</p>
+          </article>
+        
+          <article>
+            <h4>Herramientas de automatización de compilación</h4>
+            <p>Las herramientas de automatización de compilación, como Apache Maven, Gradle o Ant, se utilizan para compilar el código fuente y generar los archivos ejecutables o distribuibles del software. Estas herramientas automatizan el proceso de compilación y gestionan las dependencias del proyecto, lo que facilita la generación de artefactos listos para la liberación.</p>
+          </article>
+        
+          <article>
+            <h4>Herramientas de gestión de dependencias</h4>
+            <p>Las herramientas de gestión de dependencias, como npm (Node Package Manager) para proyectos de Node.js o Maven para proyectos Java, permiten gestionar las dependencias externas del software. Estas herramientas facilitan la descarga, instalación y actualización de las bibliotecas y paquetes necesarios para el correcto funcionamiento del software, asegurando que las versiones correctas y compatibles sean utilizadas en el proceso de liberación.</p>
+          </article>
+        
+          <article>
+            <h4>Herramientas de despliegue continuo</h4>
+            <p>Las herramientas de despliegue continuo, como Jenkins, Bamboo o CircleCI, automatizan el proceso de implementación y despliegue del software en diferentes entornos, como desarrollo, pruebas y producción. Estas herramientas permiten realizar pruebas automatizadas, gestionar configuraciones específicas de cada entorno y coordinar la entrega del software en un flujo continuo y controlado.</p>
+          </article>
+        
+          <article>
+            <h4>Herramientas de gestión de configuración</h4>
+            <p>Las herramientas de gestión de configuración, como Ansible, Chef o Puppet, se utilizan para gestionar la configuración de los sistemas y entornos en los que se desplegará el software. Estas herramientas permiten definir y mantener la configuración de los servidores, redes y otros componentes, asegurando que los entornos de producción sean consistentes y estables durante el proceso de liberación.</p>
+          </article>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

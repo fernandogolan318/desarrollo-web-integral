@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icono.png" type="image/x-png">
+    <title>Contenido Temático - Unidad 2</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="container">
+            <div class='ripple-background'>
+                <div class='circle xxlarge shade1'></div>
+                <div class='circle xlarge shade2'></div>
+                <div class='circle large shade3'></div>
+                <div class='circle mediun shade4'></div>
+                <div class='circle small shade5'></div>
+            </div>
+            <div class="header">
+                <h1><a href="index.html">Desarrollo Web Integral</a></h1>
+                <ul class="list-unidades">
+                    <li>
+                        <h2><a href="contenido-tematico.html">UNIDAD 1</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="unidad-2.html">UNIDAD 2</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="unidad-3.html">UNIDAD 3</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="unidad-4.html">UNIDAD 4</a></h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="index">
+                <ul class="list-temas">
+                    <li>
+                        <h3><a href="#tema-uno">Versionamiento</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#tema-cinco">Flujos de trabajo</a></h3>
+                    </li>
+                </ul>
+            </div>
+            <h2
+                style="font-size: 2.5rem; color: #fff; position: absolute; bottom: 5%; width: 400px;background-color: #6EC17D; padding-left: 1rem; border-radius:0 1rem 1rem 0;">
+                CONTROL DE VERSIONES</h2>
+            <div class="contenido">
+                <section id="tema-uno">
+                    <h2>Versionamiento</h2>
+                    <h3>
+                      Definir el concepto de versionamiento de software
+                    </h3>
+                    <article>
+                      <h4>Concepto de Versionamiento de Software</h4>
+                      <p>
+                        El versionamiento de software es un proceso que implica asignar números o etiquetas a las diferentes versiones de un programa o sistema de software a medida que se desarrolla y se lanzan actualizaciones.
+                      </p>
+                    </article>
+                    <article>
+                      <h4>Versionamiento Semántico</h4>
+                      <p>
+                        Este enfoque utiliza un esquema de numeración basado en tres números separados por puntos (por ejemplo, 1.0.2). El primer número indica un cambio mayor o una nueva versión que puede incluir cambios significativos o incompatibilidades con versiones anteriores. El segundo número indica una versión que agrega nuevas características, pero sigue siendo compatible con versiones anteriores. El tercer número indica una versión de corrección de errores o parche que no agrega nuevas características, solo soluciona problemas.
+                      </p>
+                    </article>
+                    <article>
+                      <h4>Versionamiento basado en números de versión</h4>
+                      <p>
+                        Este enfoque utiliza un esquema de numeración basado en números enteros (por ejemplo, 1, 2, 3). Cada nueva versión se representa por un número entero incrementado. Este enfoque generalmente se utiliza cuando no se requiere una gran diferenciación entre las versiones y se prioriza una identificación clara de la versión más reciente.
+                      </p>
+                      <p>
+                        Además, se pueden utilizar etiquetas adicionales para indicar el estado del software, como "alfa" o "beta", que indican versiones en desarrollo o versiones de prueba, respectivamente.
+                      </p>
+                    </article>
+                    <article>
+                      <h4>Importancia del Versionamiento de Software</h4>
+                      <p>
+                        El versionamiento de software es esencial para una gestión efectiva del ciclo de vida del software. Permite a los desarrolladores y usuarios identificar rápidamente qué versión están utilizando y qué cambios se han realizado en cada versión. También facilita la coordinación entre los miembros del equipo de desarrollo y la comunicación con los usuarios finales sobre las actualizaciones y mejoras disponibles.
+                      </p>
+                      <p>
+                        Una buena práctica en el versionamiento de software es documentar claramente los cambios realizados en cada versión, lo cual puede incluir notas de lanzamiento, archivos de registro de cambios o documentación detallada. Esto ayuda a los usuarios a comprender los cambios y a los desarrolladores a mantener un historial claro de las modificaciones realizadas.
+                      </p>
+                    </article>
+                </section>
+                <section id="tema-dos">
+                    <h2>Versionamiento</h2>
+                    <h3>
+                      Identificar las características de los sistemas de control de versiones: Git, SVN
+                    </h3>
+                    <article>
+                      <h4>Git</h4>
+                      <p>
+                        Git es un sistema de control de versiones distribuido ampliamente utilizado. Algunas características clave de Git incluyen:
+                      </p>
+                      <ul>
+                        <li><p>Funcionamiento distribuido: Cada copia local de un repositorio Git contiene el historial completo de cambios, lo que permite trabajar sin conexión a un servidor central.</p></li>
+                        <li><p>Velocidad y rendimiento: Git está diseñado para ser rápido y eficiente, incluso en proyectos grandes con muchos archivos y cambios.</p></li>
+                        <li><p>Ramas y fusiones: Git facilita la creación y gestión de ramas, lo que permite el desarrollo paralelo y la fusión de cambios de manera sencilla.</p></li>
+                        <li><p>Integridad de datos: Git utiliza un sistema de hash criptográfico para asegurar la integridad de los datos almacenados en el repositorio.</p></li>
+                      </ul>
+                    </article>
+                    <article>
+                      <h4>SVN (Subversion)</h4>
+                      <p>
+                        SVN es un sistema de control de versiones centralizado que ha sido ampliamente utilizado en el pasado. Algunas características destacadas de SVN son:
+                      </p>
+                      <ul>
+                        <li><p>Arquitectura centralizada: SVN utiliza un servidor central para almacenar el repositorio y manejar las operaciones de control de versiones.</p></li>
+                        <li><p>Versionamiento por revisión: SVN asigna un número de revisión a cada cambio realizado en el repositorio, lo que permite un seguimiento preciso del historial de cambios.</p></li>
+                        <li><p>Lock-Modify-Unlock: SVN permite bloquear archivos para evitar conflictos durante la edición, lo que puede ser útil en ciertos escenarios.</p></li>
+                        <li><p>Historial de cambios: SVN mantiene un registro detallado de los cambios realizados en el repositorio, incluyendo información sobre quién realizó cada cambio.</p></li>
+                      </ul>
+                    </article>
+                </section>
+                <section id="tema-tres">
+                  <h2>Versionamiento</h2>
+                  <h3>
+                    Identificar las plataformas y herramientas de versionamiento: GitHub, GitLab, bitbucket.
+                  </h3>
+                  <article>
+                    <h4>Introducción</h4>
+                    <p>
+                      Las plataformas y herramientas de versionamiento son fundamentales en el desarrollo de software colaborativo. Estas herramientas permiten gestionar y controlar el historial de cambios en el código fuente de un proyecto, facilitando la colaboración entre desarrolladores y asegurando la integridad del código a lo largo del tiempo.
+                    </p>
+                  </article>
+                  <article>
+                    <h4>GitHub</h4>
+                    <p>
+                      GitHub es una plataforma de desarrollo colaborativo basada en Git. Algunas características de GitHub son:
+                    </p>
+                    <ul>
+                      <li>
+                        <p>Repositorios remotos: Permite almacenar y gestionar repositorios de código en la nube.</p>
+                      </li>
+                      <li>
+                        <p>Colaboración: Facilita la colaboración en proyectos mediante funciones como solicitudes de extracción, revisión de código y problemas (issues).</p>
+                      </li>
+                      <li>
+                        <p>Gestión de versiones: Proporciona herramientas para controlar y visualizar el historial de cambios en los archivos y realizar seguimiento de las diferentes versiones.</p>
+                      </li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h4>GitLab</h4>
+                    <p>
+                      GitLab es una plataforma de desarrollo colaborativo que también se basa en Git. Algunas características de GitLab son:
+                    </p>
+                    <ul>
+                      <li>
+                        <p>Repositorios remotos: Permite alojar repositorios de código y gestionarlos en la nube.</p>
+                      </li>
+                      <li>
+                        <p>Integración continua (CI/CD): Proporciona herramientas para automatizar la construcción, pruebas y despliegue de aplicaciones.</p>
+                      </li>
+                      <li>
+                        <p>Gestión de problemas: Permite realizar un seguimiento de los problemas, asignar tareas y colaborar en su resolución.</p>
+                      </li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h4>Bitbucket</h4>
+                    <p>
+                      Bitbucket es otra plataforma de desarrollo colaborativo que admite Git y Mercurial como sistemas de control de versiones. Algunas características de Bitbucket son:
+                    </p>
+                    <ul>
+                      <li>
+                        <p>Repositorios remotos: Permite alojar y gestionar repositorios de código en la nube.</p>
+                      </li>
+                      <li>
+                        <p>Integración con Jira: Ofrece una integración nativa con Jira para una gestión más completa del flujo de trabajo de desarrollo.</p>
+                      </li>
+                      <li>
+                        <p>Control de acceso: Permite configurar diferentes niveles de acceso y permisos para los miembros del proyecto.</p>
+                      </li>
+                    </ul>
+                  </article>
+              </section>
+              <section id="tema-cuatro">
+                <h2>Flujos de trabajo</h2>
+                <h3>
+                  Definir el concepto de flujo de trabajo para el control de versiones
+                </h3>
+                <article>
+                  <h1>Introducción</h1>
+                  <p>
+                    Las plataformas y herramientas de control de versiones son fundamentales en el desarrollo de software colaborativo. Estas herramientas permiten gestionar y controlar el historial de cambios en el código fuente de un proyecto, facilitando la colaboración entre desarrolladores y asegurando la integridad del código a lo largo del tiempo.
+                  </p>
+                </article>
+                <article>
+                  <h2>Definición de flujo de trabajo para el control de versiones</h2>
+                  <p>
+                    El flujo de trabajo para el control de versiones se refiere a la forma en que los desarrolladores organizan y gestionan los cambios en el código fuente de un proyecto a lo largo del tiempo. Este flujo de trabajo define las prácticas y procesos que se siguen para colaborar, revisar y aprobar los cambios realizados por los miembros del equipo.
+                  </p>
+                </article>
+                <article>
+                  <h2>Branching (ramificación)</h2>
+                  <p>
+                    El branching es una técnica utilizada en el control de versiones que permite crear ramas o líneas de desarrollo independientes. Las ramas son copias del código fuente principal (rama principal o "master") y se utilizan para trabajar en nuevas características, solucionar problemas o experimentar sin afectar directamente el código en producción.
+                  </p>
+                  <p>
+                    Los desarrolladores pueden crear nuevas ramas a partir de la rama principal y realizar cambios en ellas de manera aislada. Una vez que los cambios en una rama están completos y probados, pueden fusionarse nuevamente con la rama principal para incorporar los cambios al proyecto principal.
+                  </p>
+                </article>
+                <article>
+                  <h2>Flujo de trabajo con pull requests</h2>
+                  <p>
+                    Las solicitudes de extracción, también conocidas como pull requests, son una forma común de colaboración en el control de versiones. Una pull request permite a un desarrollador notificar a otros miembros del equipo sobre los cambios realizados en una rama y solicitar su revisión y aprobación antes de fusionar los cambios con la rama principal.
+                  </p>
+                  <p>
+                    Durante el proceso de pull request, otros desarrolladores pueden revisar el código, realizar comentarios, sugerir mejoras y aprobar o rechazar los cambios propuestos. Esto ayuda a mantener un proceso de revisión de código y asegura que los cambios cumplan con los estándares de calidad establecidos antes de su incorporación al proyecto.
+                  </p>
+                </article>
+                <article>
+                  <h2>Versiones y etiquetas</h2>
+                  <p>
+                    Las herramientas de control de versiones permiten marcar puntos específicos en el historial de cambios con etiquetas o versiones. Las versiones se utilizan para identificar hitos importantes en el desarrollo del software, como lanzamientos estables o versiones específicas del producto.
+                  </p>
+                  <p>
+                    Al marcar un punto en el historial de cambios con una etiqueta, es posible referirse a esa versión en particular en el futuro y realizar un seguimiento de los cambios asociados a ella. Esto facilita la identificación y el seguimiento de versiones específicas, lo que resulta útil para la gestión del proyecto y la resolución de problemas.
+                  </p>
+                </article>
+            </section>
+            <section id="tema-cinco">
+              <h2>Flujos de trabajo</h2>
+              <h3>
+                Identificar los flujos de trabajo para el control de versiones: Git Flow, GitHub Flow, GitLab Flow, One Flow y describir sus características
+              </h3>
+              <article>
+                <h4>Introducción</h4>
+                <p>
+                  Los flujos de trabajo para el control de versiones son enfoques y estrategias utilizadas por los equipos de desarrollo para organizar y gestionar los cambios en un proyecto. Estos flujos de trabajo establecen reglas y prácticas para la colaboración, revisión y aprobación de cambios en un repositorio de control de versiones. A continuación, se describen algunos de los flujos de trabajo más populares utilizados con Git y otras plataformas de control de versiones.
+                </p>
+              </article>
+              <article>
+                <h4>Git Flow</h4>
+                <p>
+                  Git Flow es un flujo de trabajo popular desarrollado por Vincent Driessen. Algunas características de Git Flow son:
+                </p>
+                <ul>
+                  <li>
+                    <p>Uso de ramas: Git Flow utiliza ramas separadas para diferentes tipos de desarrollo, como la rama "develop" para la integración continua y la rama "master" para las versiones estables.</p>
+                  </li>
+                  <li>
+                    <p>Feature branches: Se crean ramas de características (feature branches) para desarrollar nuevas funcionalidades, las cuales se fusionan con la rama "develop" una vez completadas y probadas.</p>
+                  </li>
+                  <li>
+                    <p>Release branches: Se crean ramas de lanzamiento (release branches) para preparar nuevas versiones del software, permitiendo realizar pruebas finales y correcciones de errores antes de la publicación.</p>
+                  </li>
+                  <li>
+                    <p>Hotfix branches: Se crean ramas de corrección de errores (hotfix branches) para solucionar problemas críticos en producción, los cuales se fusionan tanto con la rama "develop" como con la rama "master".</p>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4>GitHub Flow</h4>
+                <p>
+                  GitHub Flow es un flujo de trabajo simple y ligero utilizado en la plataforma GitHub. Algunas características de GitHub Flow son:
+                </p>
+                <ul>
+                  <li>
+                    <p>Uso de una rama principal: GitHub Flow se basa en una única rama principal, generalmente llamada "main" o "master".</p>
+                  </li>
+                  <li>
+                    <p>Branch per feature: Los desarrolladores crean ramas separadas para cada nueva funcionalidad o cambio, trabajando en ellas de forma aislada.</p>
+                  </li>
+                  <li>
+                    <p>Pull requests: Una vez que los cambios en una rama están completos, se crea una solicitud de extracción (pull request) para revisar y discutir los cambios antes de fusionarlos con la rama principal.</p>
+                  </li>
+                  <li>
+                    <p>Continuous Deployment: GitHub Flow promueve la práctica de desplegar continuamente los cambios a producción después de que han sido revisados y aprobados.</p>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4>GitLab Flow</h4>
+                <p>
+                  GitLab Flow es un flujo de trabajo similar a GitHub Flow, pero optimizado para la plataforma GitLab. Algunas características de GitLab Flow son:
+                </p>
+                <ul>
+                  <li>
+                    <p>Uso de una rama principal: Al igual que GitHub Flow, GitLab Flow se basa en una única rama principal, generalmente llamada "main" o "master".</p>
+                  </li>
+                  <li>
+                    <p>Branch per feature: Los desarrolladores crean ramas separadas para cada nueva funcionalidad o cambio, trabajando en ellas de forma aislada.</p>
+                  </li>
+                  <li>
+                    <p>Merge requests: En lugar de pull requests, GitLab utiliza merge requests para solicitar la revisión y discusiónde los cambios antes de fusionarlos con la rama principal.</p>
+                  </li>
+                  <li>
+                    <p>CI/CD integrado: GitLab Flow ofrece integración continua y despliegue continuo (CI/CD) como parte de la plataforma, lo que facilita la automatización de las pruebas y el despliegue de cambios.</p>
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4>One Flow</h4>
+                <p>
+                  One Flow es un flujo de trabajo simplificado y lineal que se centra en la entrega continua. Algunas características de One Flow son:
+                </p>
+                <ul>
+                  <li>
+                    <p>Uso de una rama principal: One Flow también utiliza una única rama principal, como "main" o "master".</p>
+                  </li>
+                  <li>
+                    <p>Commits directos: En lugar de trabajar en ramas separadas, los desarrolladores realizan cambios directamente en la rama principal después de haber realizado pruebas y revisiones locales adecuadas.</p>
+                  </li>
+                  <li>
+                    <p>Despliegue continuo: Con One Flow, los cambios se despliegan continuamente en producción después de haber sido revisados y aprobados.</p>
+                  </li>
+                  <li>
+                    <p>Etiquetas de versión: Se utilizan etiquetas para marcar versiones estables del software en la rama principal.</p>
+                  </li>
+                </ul>
+              </article>
+          </section>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
